@@ -1,16 +1,21 @@
 ---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import ProjectViewer from '../components/ProjectViewer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION} from "../consts";
+
+const title = SITE_TITLE;
+const description = SITE_DESCRIPTION;
 ---
 
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<BaseHead title={title} description={description}/>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<main class="p-10 font-mono">
+			<Header />
+			<ProjectViewer />
+		</main>
 	</body>
 </html>

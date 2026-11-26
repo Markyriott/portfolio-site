@@ -1,0 +1,10 @@
+[
+    {
+        "id": "PetWise", 
+        "techStack": ["TypeScript", "Nextjs", "Prisma"], 
+        "description": "", 
+        "mediaPath": "", 
+        "demoLink": "", 
+        "repoLink": ""
+    }
+]
