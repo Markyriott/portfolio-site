@@ -1,11 +1,21 @@
 ---
-import ProjectLinks from "./ProjectLink.astro";
-import StackIcons from "./StackIcon.astro";
+import { getCollection } from "astro:content";
+import ProjectLink from "./ProjectLink.astro";
+import StackIcons from "./StackIcons.astro";
+
+const projects = await getCollection("projects");
 ---
 
-<div class=""> 
-    <div>
-        <StackIcons stackList={[]} />
+<div class="flex flex-row gap-20"> 
+    <div class="bg-gray-800 text-white p-2 hidden md:w-100 md:h-90 lg:w-200 lg:h-150 md:block">
+        Display
     </div>
-    <ProjectLinks />
+    <div class="space-y-2">
+        {projects.map((project) => (
+            <ProjectLink project={{id: project.data.id, description: project.data.description, startDate: project.data.startDate, endDate: project.data.endDate, demoLink: project.data.demoLink, repoLink: project.data.repoLink}}> 
+            <StackIcons stackList={project.data.techStack} /> 
+            </ProjectLink>
+        ))}
+        <a href="">View Full Resume /</a>
+    </div>
 </div>

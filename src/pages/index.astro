@@ -2,7 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import ProjectViewer from '../components/ProjectViewer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION} from "../consts";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 
 const title = SITE_TITLE;
 const description = SITE_DESCRIPTION;
@@ -13,7 +13,7 @@ const description = SITE_DESCRIPTION;
 		<BaseHead title={title} description={description}/>
 	</head>
 	<body>
-		<main class="p-10 font-mono">
+		<main class="p-10 font-mono space-y-20 mx-auto max-w-fit">
 			<Header />
 			<ProjectViewer />
 		</main>

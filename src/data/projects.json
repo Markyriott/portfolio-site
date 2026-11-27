@@ -1,10 +1,22 @@
 [
     {
         "id": "PetWise", 
-        "techStack": ["TypeScript", "Nextjs", "Prisma"], 
-        "description": "", 
-        "mediaPath": "", 
-        "demoLink": "", 
-        "repoLink": ""
+        "techStack": ["TypeScript", "Nextjs", "Azure", "Prisma", "TailwindCSS"], 
+        "description": "lorem ipsum dolor sit amet consectetur adipiscing elit repellendus lorem possimus quas sunt repellendus optio illum aut occaecat anim nisi ut et dolor enim est nulla temporibus nisi harum dolor", 
+        "startDate": "SEP 2026",
+        "endDate": "PRESENT",
+        "media": "", 
+        "demoLink": "https://google.com", 
+        "repoLink": "https://google.com"
+    },
+    {
+        "id": "Portfolio Website", 
+        "techStack": ["TypeScript", "Astro", "TailwindCSS"], 
+        "description": "lorem ipsum dolor sit amet consectetur adipiscing elit repellendus lorem possimus quas sunt repellendus optio illum aut occaecat anim nisi ut et dolor enim est nulla temporibus nisi harum dolor", 
+        "startDate": "NOV 2026",
+        "endDate": "PRESENT",
+        "media": "", 
+        "demoLink": "https://google.com", 
+        "repoLink": "https://google.com"
     }
 ]

@@ -1,14 +1,15 @@
 ---
 import { GITHUB_URL, LINKEDIN_URL } from "../consts";
+import Link from "./Link.astro";
 ---
 
 <div class="flex gap-2">
     <div>
-        <h1 class= "text-2xl">Kevin Harriott</h1>
+        <h1 class= "text-3xl font-bold">Kevin Harriott</h1>
         <p class="text-lg">Software Engineer</p>
     </div>
     <div class= "space-x-2 mt-2">
-        <a href={GITHUB_URL}>github</a>
-        <a href={LINKEDIN_URL}>linkedin</a>
+        <Link href={GITHUB_URL} text="github" />
+        <Link href={LINKEDIN_URL} text="linkedin" />
     </div>
 </div>
