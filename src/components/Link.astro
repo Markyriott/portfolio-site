@@ -6,4 +6,7 @@ interface Props {
 const { href, text } = Astro.props;
 ---
 
-<a href={href} class="underline p-1 hover:no-underline hover:text-white hover:bg-gray-600">{text}</a>
+<a href={href} class="group underline p-1 transition duration-150 hover:no-underline hover:text-white hover:bg-gray-600">
+    {text} 
+    <span class="text-xs mr-1 inline-block translate-x-0.5 translate-y-0.5 transition duration-150 group-hover:translate-x-1 group-hover:-translate-y-0.5">↗︎</span>
+</a>

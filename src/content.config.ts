@@ -28,7 +28,7 @@ const projects = defineCollection({
     loader: file("src/data/projects.json"),
     schema: z.object({
         id: z.string(),
-        description: z.string().max(200),
+        description: z.string().max(180),
         startDate: z.string(),
         endDate: z.string().optional(),
         media: z.string().optional(),

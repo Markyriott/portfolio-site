@@ -2,20 +2,23 @@
 import { getCollection } from "astro:content";
 import ProjectLink from "./ProjectLink.astro";
 import StackIcons from "./StackIcons.astro";
+import Link from "./Link.astro";
+
+const resumeLink="/resume.pdf";
 
 const projects = await getCollection("projects");
 ---
 
-<div class="flex flex-row gap-20"> 
-    <div class="bg-gray-800 text-white p-2 hidden md:w-100 md:h-90 lg:w-200 lg:h-150 md:block">
+<div class="flex flex-row gap-10"> 
+    <div class="bg-gray-800 text-white p-2 hidden md:block md:min-w-100 md:h-67 lg:min-w-150 lg:h-100">
         Display
     </div>
     <div class="space-y-2">
         {projects.map((project) => (
             <ProjectLink project={{id: project.data.id, description: project.data.description, startDate: project.data.startDate, endDate: project.data.endDate, demoLink: project.data.demoLink, repoLink: project.data.repoLink}}> 
-            <StackIcons stackList={project.data.techStack} /> 
+                <StackIcons stackList={project.data.techStack} /> 
             </ProjectLink>
         ))}
-        <a href="">View Full Resume /</a>
+        <Link href={resumeLink} text="View Full Resume" />
     </div>
 </div>
