@@ -4,17 +4,17 @@
         "techStack": ["TypeScript", "Nextjs", "Azure", "Prisma", "TailwindCSS"], 
         "description": "PetWise helps prospective pet adopters decide if they are ready for pet ownership and finds pets that fit their lifestyle based on budget, living space, and schedule.", 
         "startDate": "SEP 2026",
-        "endDate": "PRESENT",
+        "endDate": "",
         "media": "", 
-        "demoLink": "https://google.com", 
-        "repoLink": "https://google.com"
+        "demoLink": "", 
+        "repoLink": ""
     },
     {
         "id": "Portfolio Website", 
         "techStack": ["TypeScript", "Astro", "TailwindCSS"], 
         "description": "A portfolio website showcasing my most recent projects.", 
         "startDate": "NOV 2026",
-        "endDate": "PRESENT",
+        "endDate": "",
         "media": "", 
         "demoLink": "", 
         "repoLink": "https://github.com/Markyriott/portfolio-site"

@@ -15,16 +15,16 @@ interface Props {
 const { project } = Astro.props;
 ---
 
-<div class="p-2 w-full max-w-4xl transition duration-100 hover:bg-gray-100 hover:outline hover:outline-gray-400">
+<div class="p-2 w-full max-w-3xl transition duration-100 hover:bg-gray-100 hover:outline hover:outline-gray-400">
     <div class="flex gap-x-2 items-center flex-wrap">
-        <p class="text-sm text-wrap text-gray-600">{project.startDate} — {project.endDate}</p>
+        <p class="text-sm text-wrap text-gray-600">{project.startDate} — {project.endDate? project.endDate : "PRESENT"}</p>
         <span class="text-sm text-gray-400">|</span>
         <p class="text-md font-bold">{project.id}</p>
         <slot/>
     </div>
     <p class="text-sm ml-2 text-wrap">{project.description}</p>
-    <div class="flex ml-2 gap-2">
-        {project.demoLink && <Link href={project.demoLink} text="demo" />}
-        {project.repoLink && <Link href={project.repoLink} text="repo" />}
+    <div class="flex  gap-2">
+        {project.demoLink && <Link href={project.demoLink} text="Demo" />}
+        {project.repoLink && <Link href={project.repoLink} text="Repo" />}
     </div>
 </div>
